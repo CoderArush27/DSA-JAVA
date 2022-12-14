@@ -93,6 +93,21 @@ public class LinkedList {
         }
         return -1;
     }
+    public int helper(Node head,int key){
+        if(head==null)
+        return -1;
+
+        if(head.data == key)
+        return 0;
+
+        int idx = helper(head.next, key);
+        if(idx ==-1)
+            return -1;
+        return idx+1;
+    }
+    public int recSearch(int key){
+        return helper(head,key);
+    }
     void print(Node head){
         Node temp = head;
         while(temp!=null){
@@ -122,7 +137,7 @@ public class LinkedList {
         l.print(head);
         l.deletePos(3);
         l.print(head);
-
+       System.out.println(l.recSearch(70));
         System.out.println(l.search(head, 100));
     }
 }
