@@ -26,6 +26,7 @@ public class CircularQueue {
             System.out.println("QUEUE IS FULL");
             return;
         }
+        
         if(front==-1){
             front =0;
         }
