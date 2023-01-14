@@ -2,10 +2,6 @@
 // n*(n-1)/2 sorting is being performed
 // 
 public class Bubble {
-    public static void swap(int a,int b){
-        
-    }
-
     public static void print(int arr[]){
         for(int x:arr){
             System.out.print(x+" ");
