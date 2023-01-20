@@ -31,9 +31,9 @@ public class DeletingLoop {
     return count;
 }
 
-boolean loopDetect(Node head){
-    Node slow= head;
-    Node fast = head;
+boolean loopDetect(Node h){
+    Node slow= h;
+    Node fast = h;
     while(fast!=null && fast.next!=null){
         slow = slow.next;
         fast = fast.next.next;
@@ -43,9 +43,27 @@ boolean loopDetect(Node head){
     }
     return false;
 }
+void deleteLoop(Node h){
+    Node slow= h;
+    Node fast = h;
+    Node prev = null;
+    while(fast!=null && fast.next!=null){
+        slow = slow.next;
+        fast = fast.next.next;
 
+        if(fast==slow)
+           slow = head;
+           break;
+    }
+    while(slow!=fast){
+       prev = fast;
+       slow = slow.next;
+       fast = fast.next;
+    }
+    prev.next = null;
+}
 public static void main(String[] args) { 
-    DetectingCycle l = new DetectingCycle();
+    DeletingLoop l = new DeletingLoop();
     l.push(10);
     l.push(20);
     l.push(30);
@@ -58,5 +76,6 @@ public static void main(String[] args) {
         System.out.println("LOOP DETECTED");
     else    
         System.out.println("LOOP NOT DETECTED");
+
 }
 }
