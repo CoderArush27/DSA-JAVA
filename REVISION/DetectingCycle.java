@@ -50,7 +50,7 @@ public static void main(String[] args) {
     l.push(40);
     l.push(50);
     l.push(60);
-    //l.head.next.next.next.next = l.head;
+    l.head.next.next.next.next = l.head;
 
     if(l.loopDetect(head))
         System.out.println("LOOP DETECTED");
