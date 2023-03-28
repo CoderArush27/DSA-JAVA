@@ -15,7 +15,7 @@ public class creation {
     }
 
     public static class BinaryTree{
-        static int idx = -1;    //static so it changes accordingly
+        static int idx = -1;    //static so it changes accordingly and belongs to the class
         public Node buildTree(int nodes[]){        //this is of type of node because it returns the root node
             idx++;
             if(nodes[idx]==-1)
