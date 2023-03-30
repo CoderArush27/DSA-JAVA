@@ -19,12 +19,13 @@ public class QuickSort {
                 arr[j]=temp;
             }
         }
+        //to place pivot at it's correct position
         j++;
         int temp = pivot;
         arr[ei] = arr[j];
         arr[j] = temp;
 
-        return j;
+        return j; //pivot index
     }
 
     public void print(int a[]){
