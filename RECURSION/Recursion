@@ -1,0 +1,11 @@
+when a function calls itself inside a function it is known as rescursive function and the process is known as recursion
+
+Base condition to stop a recursion otherwise stack overflow
+
+In recursion there are both ascending phase and descending phase and this the major difference between a loop and recursion
+
+Statements before the recursive function call executes during ascending phase and statements after the recursive function call executes during descending phase
+
+Recursion uses stack to maintain its activation record
+
+
