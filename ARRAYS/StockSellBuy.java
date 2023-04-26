@@ -5,7 +5,7 @@ public class StockSellBuy {
         int maxProfit = Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
             int sellPrice = arr[i];
-            if(buyPrice < sellPrice){
+            if(sellPrice>buyPrice){
                 profit = sellPrice-buyPrice;
                 maxProfit = Math.max(maxProfit, profit);
             }
@@ -17,7 +17,7 @@ public class StockSellBuy {
 
     }
     public static void main(String[] args) {
-        int arr[]={7,1,5,3,6,4};
+        int arr[]={100,180,260,310,40,535,695};
         System.out.println("MAXIMUM PROFIT = "+profit(arr));
     }
 }
