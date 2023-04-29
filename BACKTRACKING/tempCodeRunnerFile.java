@@ -1,1 +1,1 @@
-  // ans1.delete(0, i);
+ // str = str.substring(0,1);
