@@ -1,1 +1,1 @@
- // str = str.substring(0,1);
+ans
