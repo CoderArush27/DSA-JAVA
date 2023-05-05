@@ -3,7 +3,6 @@ public class Subsets {
     public static void subset(String str,int i,String ans){
         //base case
         if(i==str.length()){
-
         if(ans.length()==0){
             System.out.print("null"+" ");
             return;
