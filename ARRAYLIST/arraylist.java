@@ -8,8 +8,8 @@ public class arraylist {
         list.add(20);
         list.add(50);
         list.add(60);
-        list.add(2,70);
-        list.set(2, 100);
+        list.add(4,8880);
+        list.set(3, 100);
        System.out.println(list.remove(3));
        System.out.println(list.get(2));
         System.out.println(list);
